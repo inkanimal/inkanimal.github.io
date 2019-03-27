@@ -16,23 +16,27 @@ Once you have those you can store them in the credentials.yml file. You need to 
 
 In the terminal you put  `EDITOR="atom " rails credentials:edit` You may need to add "--wait" following the name of the text editor you are using, in my case, atom. This will open the credentials file where you can place your facebook secrets.
 
- 
- `facebook: 
-    APP_ID: 123
-	  APP_SECRET: abc`
+ ```
+ facebook: 
+         APP_ID: 123
+	     APP_SECRET: abc
+	```
 	 
 	 
 Since I used devise, I put the APP_ID and APP_SECRET in `initializers/devise.rb` like this:
 
-  `APP_ID = Rails.application.credentials.facebook[:APP_ID]
-  APP_SECRET = Rails.application.credentials.facebook[:APP_SECRET]
-  config.omniauth :facebook, APP_ID, APP_SECRET`
-	
-	
-	The rest is just pretty straight forward omniauth stuff using the devise gem. You can find their documentation here: [https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview](http://)
-	
-	For me, the real challenge was facebook with their ever changing menus and layouts.  Perhaps it is just me or my loathe for their ads manager software. Anyway that is story for another day. Happy coding.
-				
+```
+APP_ID = Rails.application.credentials.facebook[:APP_ID]
+APP_SECRET = Rails.application.credentials.facebook[:APP_SECRET]
+config.omniauth :facebook, APP_ID, APP_SECRET
+```
+
+
+	 
+The rest is just pretty staight forward omniauth stuff using the devise gem. You can find their documentation here:
+https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview
+				 
+For me the challenging part was facebook and their never ending changes to their menus and layouts. Perhaps is is just my loathe for their ads manager interface, but that is a story for another day. Happy coding.
 
 				
 	
