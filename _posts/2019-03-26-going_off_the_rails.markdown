@@ -6,7 +6,7 @@ permalink:  going_off_the_rails
 ---
 
 
-##3 For my rails project I built a simple fitness tracker. One can record the exercise they did, including how many sets, reps and the weight they used. They can also search through a list of preinstalled exercises for insperation. All their workouts are recorded by date so they can easily look them up at a later date. 
+ For my rails project I built a simple fitness tracker. One can record the exercise they did, including how many sets, reps and the weight they used. They can also search through a list of preinstalled exercises for insperation. All their workouts are recorded by date so they can easily look them up at a later date. 
 
 One of the more challenging parts to this project was integrating the facebook sign-in option. It is mostly annoying on facebooks' end of things. 
 
