@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Dream project vs reality"
-date:       2019-07-30 20:15:07 +0000
+date:       2019-07-30 16:15:09 -0400
 permalink:  dream_project_vs_reality
 ---
 
